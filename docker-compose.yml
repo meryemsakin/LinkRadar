@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  file-discovery:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./downloads:/app/downloads
+    command: [ "--url", "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu", "--year", "2025" ]

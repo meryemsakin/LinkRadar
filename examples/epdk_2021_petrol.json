@@ -1,0 +1,167 @@
+{
+  "url": "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu",
+  "filters": {
+    "year": "2021",
+    "category": "petrol"
+  },
+  "page_meta": {
+    "institution": "EPDK - Enerji Piyasası Düzenleme Kurumu",
+    "sector": "Enerji",
+    "content_type": "Aylık Raporlar",
+    "organization_scheme": "yıl-ay",
+    "available_dimensions": [
+      {
+        "name": "Yıl",
+        "type": "temporal",
+        "values": [],
+        "is_hierarchical": true
+      },
+      {
+        "name": "Ay",
+        "type": "temporal",
+        "values": [],
+        "is_hierarchical": true
+      }
+    ],
+    "language": "tr",
+    "confidence": 0.95
+  },
+  "total_files": 12,
+  "successful": 12,
+  "failed": 0,
+  "verification_issues": [],
+  "files": [
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Ocak_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=p4+MJ+57Ybs%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-01",
+      "summary": "Ocak 2021 tarihli Petrol Piyasası Sektör Raporu, Türkiye'nin petrol üretimi, dış ticareti (ithalat ve ihracat) ve yurtiçi satışları hakkında detaylı istatistikler sunmaktadır. Rapor, lisans sahiplerine göre rafineri üretimi ve ithalat-ihracat verilerini içeren tablolarla desteklenmektedir. Ana veri türü istatistik olup, kapsamı Türkiye'nin petrol piyasası üzerinedir.",
+      "status": "success",
+      "size_bytes": 1090378,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Şubat_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=8ZXarcfbTX4%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-02",
+      "summary": "Petrol Piyasası Sektör Raporu, Şubat 2021 dönemine ait rafineri üretimi, dış ticaret (ithalat ve ihracat) ve yurtiçi satışlar gibi konuları kapsamaktadır. Rapor, istatistiksel veriler içeren tablolarla desteklenmiş olup, lisans sahiplerine göre üretim ve ticaret verilerini detaylandırmaktadır. Önemli tablolar arasında lisans türlerine göre ithalat ve ihracat verileri ile illere göre yurtiçi satış miktarları yer almaktadır.",
+      "status": "success",
+      "size_bytes": 1104538,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Mart_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=FFbMDVDiHqs%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-03",
+      "summary": "Mart 2021 dönemine ait petrol piyasası sektör raporu, rafineri üretimi, dış ticaret (ithalat ve ihracat) ve yurtiçi satışlar gibi konuları kapsamaktadır. Rapor, her bölümde detaylı tablolarla desteklenen istatistiksel veriler sunmakta ve lisans sahiplerine göre üretim, ithalat ve ihracat miktarlarını içermektedir. Önemli tablolar arasında lisans türlerine göre ithalat ve ihracatın karşılaştırılması yer almaktadır.",
+      "status": "success",
+      "size_bytes": 1757222,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Nisan_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=ipgl4Ju6JEI%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-04",
+      "summary": "Nisan 2021 tarihli bu rapor, petrol piyasasındaki üretim, dış ticaret ve yurtiçi satışlar üzerine detaylı istatistikler sunmaktadır. Ana veri türü istatistiksel verilerdir ve rapor, rafineri üretimi, ithalat ve ihracat verilerini çeşitli tablolarla kapsamaktadır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 1394643,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Mayıs_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=cH8IGQHCEPo%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-05",
+      "summary": "Mayıs 2021 tarihli bu rapor, petrol piyasasındaki üretim, dış ticaret ve yurtiçi satışlar üzerine detaylı istatistikler sunmaktadır. Ana veri türü istatistiksel verilerdir ve rapor, rafineri üretimi, ithalat ve ihracat verilerini çeşitli tablolarla kapsamaktadır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat ve ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 909886,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Haziran_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=81BDYM%2FO6NI%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-06",
+      "summary": "Petrol piyasasıyla ilgili üretim, dış ticaret ve yurtiçi satışlar üzerine detaylı veriler sunan bir sektör raporudur. Ana veri türü istatistiksel olup, Haziran 2021 dönemine ait rafineri üretimi, ithalat ve ihracat verileri ile yurtiçi satış miktarları gibi bilgileri içermektedir. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 1102721,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Temmuz_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=xU7pLc3OvjY%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-07",
+      "summary": "Petrol piyasasıyla ilgili Temmuz 2021 dönemine ait üretim, dış ticaret ve yurtiçi satışlar üzerine detaylı veriler sunan bir rapordur. Ana veri türü istatistiksel olup, rafineri üretimi, ithalat ve ihracat verileri ile yurtiçi satış miktarları gibi özel tablolar içermektedir. Rapor, lisans sahiplerine göre ayrılmış verilerle zenginleştirilmiş ve çeşitli karşılaştırmalar yapılmıştır.",
+      "status": "success",
+      "size_bytes": 1127764,
+      "error_message": null
+    },
+    {
+      "filename": "2021_Ağustos_ayı_Petrol_Piyasası_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=rn0DeVAaBC8%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-08",
+      "summary": "2021 Ağustos ayına ait petrol piyasası sektör raporu, üretim, dış ticaret ve yurtiçi satışlar gibi konuları kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolar içermekte olup, her bir bölümde çeşitli istatistikler sunulmaktadır. Ana veri türü istatistiksel verilerdir ve rapor, Türkiye'nin petrol piyasasındaki dinamikleri analiz etmektedir.",
+      "status": "success",
+      "size_bytes": 1518672,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Eylül_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=qWVEUz%2FHR2c%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-09",
+      "summary": "Eylül 2021 tarihli bu rapor, petrol piyasasıyla ilgili üretim, dış ticaret ve yurtiçi satışlar üzerine detaylı istatistikler sunmaktadır. Ana veri türü istatistik olup, rafineri üretimi, ithalat ve ihracat verileri ile illere göre yurtiçi satış miktarları gibi özel tablolar içermektedir. Rapor, 2021 yılına ait verileri kapsamaktadır.",
+      "status": "success",
+      "size_bytes": 1120306,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Ekim_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=89Hcigdikm4%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-10",
+      "summary": "Ekim 2021 tarihli bu rapor, petrol piyasasındaki üretim, dış ticaret ve yurtiçi satışlar üzerine detaylı istatistikler sunmaktadır. Ana veri türü istatistiksel verilerdir ve rapor, rafineri üretimi, ithalat ve ihracat verilerini çeşitli tablolarla kapsamaktadır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 952995,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Kasım_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=IS08ioPm7PI%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-11",
+      "summary": "Petrol Piyasası Sektör Raporu, Kasım 2021 dönemine ait üretim, dış ticaret ve yurtiçi satışlar gibi konuları kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolarla desteklenmiş olup, tonaj bazında veriler sunmaktadır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 1093420,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_Piyasası_Sektör_Raporu_Aralık_2021.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=nV+yG5RNwnA%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2021-12",
+      "summary": "Petrol Piyasası Sektör Raporu, Aralık 2021 dönemine ait rafineri üretimi, dış ticaret (ithalat ve ihracat) ve yurtiçi satışlar üzerine detaylı istatistikler sunmaktadır. Rapor, lisans sahiplerine göre üretim ve ticaret verilerini içeren çeşitli tablolarla desteklenmektedir. Özel tablolar arasında ülkelere göre ithalat ve ihracat verileri ile dönemler arası karşılaştırmalar yer almaktadır.",
+      "status": "success",
+      "size_bytes": 1094613,
+      "error_message": null
+    }
+  ]
+}

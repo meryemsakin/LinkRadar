@@ -1,0 +1,196 @@
+{
+  "url": "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu",
+  "filters": {
+    "year": "2025",
+    "category": "petrol"
+  },
+  "page_meta": {
+    "institution": "EPDK - Enerji Piyasası Düzenleme Kurumu",
+    "sector": "Enerji",
+    "content_type": "Aylık Raporlar",
+    "organization_scheme": "kategori",
+    "available_dimensions": [
+      {
+        "name": "Kategori",
+        "type": "categorical",
+        "values": [
+          "Elektrik",
+          "Doğal Gaz",
+          "Petrol",
+          "LPG"
+        ],
+        "is_hierarchical": false
+      },
+      {
+        "name": "Yıl",
+        "type": "temporal",
+        "values": [
+          "2024"
+        ],
+        "is_hierarchical": true
+      }
+    ],
+    "language": "tr",
+    "confidence": 0.95
+  },
+  "total_files": 14,
+  "successful": 14,
+  "failed": 0,
+  "verification_issues": [],
+  "files": [
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Ocak_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=jKekVOLPSRk%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-01",
+      "summary": "2025 yılı Ocak ayına ait petrol piyasası raporu, üretim, dış ticaret ve yurt içi satışlar gibi konuları kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolar içermekte olup, bu veriler tonaj bazında sunulmaktadır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 646954,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Şubat_Ayı_Sektör_Raporu2.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=ayK0wM7uGi0%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-02",
+      "summary": "2025 yılı Şubat ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolar içermekte olup, özellikle ülkelere göre ithalat ve ihracat miktarlarını analiz etmektedir. Ana veri türü istatistiksel verilerdir ve rapor, 2025 yılına ait dönemsel verileri sunmaktadır.",
+      "status": "success",
+      "size_bytes": 859869,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Petrol_Piyasası_Mart_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=9MUrmuaYSXY%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-03",
+      "summary": "2025 Mart ayına ait petrol piyasası raporu, rafineri üretimi ve dış ticaret verilerini kapsamaktadır. Ana veri türü istatistiksel olup, ithalat ve ihracat verileri ülkelere ve lisans türlerine göre detaylandırılmıştır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve dönemler arası karşılaştırmalar yer almaktadır.",
+      "status": "success",
+      "size_bytes": 852995,
+      "error_message": null
+    },
+    {
+      "filename": "Petrol_İl_Bazında_Teslimler_Mart_2025.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=lNGbWHgv1Gg%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-03",
+      "summary": "Mart 2025 dönemine ait il bazında petrol ürünleri teslimat verilerini içeren bir dokümandır. 81 ayrı sheet'te, benzin, motorin, fuel oil, havacılık yakıtları gibi çeşitli petrol ürünlerinin teslimat miktarları detaylandırılmaktadır. Türkiye genelindeki illere yönelik bu veriler, sektörel analizler için önemli bir kaynak sunmaktadır.",
+      "status": "success",
+      "size_bytes": 274567,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Nisan_Ayı_Sektör_Raporu_Rev.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=OrqvVTwVfqI%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-04",
+      "summary": "2025 yılı Nisan ayına ait petrol piyasası verilerini içeren bir sektör raporudur. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolarla birlikte, 2025 yılının ilk dört ayını kapsamaktadır. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 867845,
+      "error_message": null
+    },
+    {
+      "filename": "Nisan_2025_Petrol_Piyasası_Sektör_Raporu_Eki_-İl_Bazında_Teslimler.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=hqznBYM3Yyk%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-04",
+      "summary": "Nisan 2025 dönemine ait petrol piyasası verilerini içeren bir rapor olup, il bazında teslimatları detaylandıran istatistikler sunmaktadır. 81 sheet'ten oluşan dosyada, her il için petrol ürünleri teslimatları ve şirket bazında dağılımlar yer almaktadır. Öne çıkan bilgiler arasında benzin, motorin ve fuel oil türleri gibi ürünlerin teslimat verileri bulunmaktadır.",
+      "status": "success",
+      "size_bytes": 262625,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Mayıs_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=YVOtDmShkzg%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-05",
+      "summary": "2025 yılı Mayıs ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolar içermekte olup, özellikle ülkelere göre ithalat ve ihracat miktarlarını analiz etmektedir. Ana veri türü istatistiksel verilerdir ve rapor, 2025 yılının ilk beş ayını da kapsayan dönemsel karşılaştırmalar sunmaktadır.",
+      "status": "success",
+      "size_bytes": 833716,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_haziran_Ayı_Sektör_Raporu_revize.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=al+1jE3FRm8%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-06",
+      "summary": "2025 yılına ait petrol piyasası verilerini içeren bu rapor, haziran ayı üretim, ithalat ve ihracat istatistiklerini detaylandırmaktadır. Rapor, lisans sahiplerine göre rafineri üretimi ve dış ticaret verilerini sunan çeşitli tablolar içermekte olup, referans dönemi haziran 2025'tir. Özel tablolar arasında ülkelere göre ithalat ve ihracat verileri ile dönemler arası karşılaştırmalar yer almaktadır.",
+      "status": "success",
+      "size_bytes": 831579,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Petrol_Piyasası_Temmuz_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=Lppyuunixvc%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-07",
+      "summary": "2025 Temmuz ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. Ana veri türü istatistiksel verilerdir ve rapor, rafineri üretimi ile ithalat ve ihracat verilerini detaylandıran tablolar içermektedir. Özel tablolar arasında lisans sahiplerine göre rafineri üretimi ve ülkelere göre ithalat-ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 791934,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_ağustos_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=A%2FxkzCtDKWE%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-08",
+      "summary": "2025 yılı Ağustos ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolar içermekte olup, özellikle ülkelere göre ithalat ve ihracat miktarlarını analiz etmektedir. Ana veri türü istatistiksel verilerdir ve rapor, 2025 yılına ait dönemsel verileri sunmaktadır.",
+      "status": "success",
+      "size_bytes": 804700,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Eylül_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=q21sEN5YPdY%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-09",
+      "summary": "2025 yılı Eylül ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. Ana veri türü istatistiksel olup, rafineri üretimi, ithalat ve ihracat verileri çeşitli tablolarla sunulmaktadır. Rapor, Eylül 2025 dönemine odaklanmakta ve lisans sahiplerine göre detaylı veriler içermektedir.",
+      "status": "success",
+      "size_bytes": 734997,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Ekim_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=tErPUmWec1c%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-10",
+      "summary": "2025 yılı Ekim ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. Rapor, rafineri üretimi, ithalat ve ihracat verilerini detaylandıran tablolar içermekte olup, özellikle ülkelere göre ithalat ve ihracat miktarlarını analiz etmektedir. Ana veri türü istatistiksel verilerdir ve rapor, Ekim 2025 dönemine odaklanmaktadır.",
+      "status": "success",
+      "size_bytes": 751554,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Kasım_Ayı_Sektör_Raporu2.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=EHTPM%2FwQ6tg%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-11",
+      "summary": "2025 yılı Kasım ayına ait petrol piyasası raporu, üretim ve dış ticaret verilerini kapsamaktadır. İstatistiksel veriler, rafineri üretimi, ithalat ve ihracat detaylarıyla birlikte çeşitli tablolar halinde sunulmaktadır. Rapor, özellikle Kasım 2025 dönemi ve Ocak-Kasım 2025 aralığını içeren verileri içermektedir.",
+      "status": "success",
+      "size_bytes": 762408,
+      "error_message": null
+    },
+    {
+      "filename": "2025_Yılı_Petrol_Piyasası_Aralık_Ayı_Sektör_Raporu.docx",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=z4dR8e3MWFA%3D",
+      "extension": ".docx",
+      "file_type": "document",
+      "period": "2025-12",
+      "summary": "2025 yılı Aralık ayına ait petrol piyasası sektör raporu, rafineri üretimi ve dış ticaret verilerini kapsamaktadır. Ana veri türü istatistiksel verilerdir ve rapor, lisans sahiplerine göre rafineri üretimi ile ülkelere göre ithalat ve ihracat detaylarını içeren tablolar sunmaktadır. Özel tablolar arasında Aralık 2025 dönemi için lisans sahiplerine göre rafineri üretimi ve ithalat ile ihracat verileri yer almaktadır.",
+      "status": "success",
+      "size_bytes": 757864,
+      "error_message": null
+    }
+  ]
+}
