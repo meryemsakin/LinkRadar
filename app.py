@@ -429,8 +429,8 @@ with gr.Blocks(title="LinkRadar | Belge Keşif Motoru", css=custom_css) as demo:
         <div class="lk-badge"><span class="lk-bdot"></span>AGENT SİSTEMİ AKTİF</div>
         <div class="lk-title">LINK<b>RADAR</b></div>
         <div class="lk-sub">
-          Kurumsal portallardaki belge yığınından hedef dosyaları saniyeler içinde
-          tespit eden yapay zeka destekli ajan sistemi.
+          Web sitelerindeki PDF, Excel ve Word dosyalarını otomatik tespit edip
+          içeriklerini özetleyen yapay zeka destekli keşif aracı.
         </div>
       </div>
     </div>
@@ -516,4 +516,4 @@ with gr.Blocks(title="LinkRadar | Belge Keşif Motoru", css=custom_css) as demo:
 
 if __name__ == "__main__":
     print("🚀 LinkRadar başlatılıyor...")
-    demo.launch(server_name="127.0.0.1", server_port=7860, share=False)
+    demo.launch(server_name="0.0.0.0", server_port=7860, share=False)

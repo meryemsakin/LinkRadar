@@ -1,10 +1,17 @@
-version: "3.8"
-
 services:
-  file-discovery:
+  linkradar:
     build: .
     env_file:
       - .env
     volumes:
       - ./downloads:/app/downloads
-    command: [ "--url", "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu", "--year", "2025" ]
+
+  ui:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./downloads:/app/downloads
+    entrypoint: ["python", "app.py"]
+    ports:
+      - "7860:7860"

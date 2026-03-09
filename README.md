@@ -182,11 +182,33 @@ Bu yapı oldukça esnektir ve farklı kurum sitelerindeki testlerden başarıyla
 
 ## Docker
 
+### CLI — Tek Komutla Sorgu
+
 ```bash
-docker-compose up
-# veya
-docker build -t linkradar .
-docker run --env-file .env linkradar "https://site.com" -q "2025 raporları"
+# Doğal dil sorgusu ile
+docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+  -q "2025 yılına ait petrol raporlarını listele"
+
+# Explicit filtreler ile
+docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+  --year 2025 --file-type xlsx
+
+# Sonuçları JSON'a kaydet
+docker compose run linkradar analyze "https://www.epdk.gov.tr/..." \
+  -q "2025 raporları" -o examples/output.json
+```
+
+### Web Arayüzü (Gradio UI)
+
+```bash
+docker compose up ui
+# Tarayıcıda http://localhost:7860 adresine gidin
+```
+
+### Build
+
+```bash
+docker compose build
 ```
 
 ## Test
