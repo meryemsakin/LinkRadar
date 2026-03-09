@@ -11,6 +11,7 @@ import logging
 import time
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
+from typing import Optional, Dict, Tuple
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from src.graph.state import AgentState, FileAnalysisState
@@ -26,10 +27,10 @@ LLM_CONCURRENCY = 3  # Rate limiting koruması
 
 # Semaphore'ları event loop başına lazily oluştur
 # (Streamlit/asyncio.run() farklı loop kullandığında hata vermemesi için)
-_semaphores: dict[int, tuple[asyncio.Semaphore, asyncio.Semaphore]] = {}
+_semaphores: Dict[int, Tuple[asyncio.Semaphore, asyncio.Semaphore]] = {}
 
 
-def _get_semaphores() -> tuple[asyncio.Semaphore, asyncio.Semaphore]:
+def _get_semaphores() -> Tuple[asyncio.Semaphore, asyncio.Semaphore]:
     """Mevcut event loop için semaphore çifti döndürür."""
     loop = asyncio.get_running_loop()
     loop_id = id(loop)
@@ -124,7 +125,7 @@ def _content_type_to_ext(content_type: str) -> str:
     return ""
 
 
-def _detect_ext_from_error(error_msg: str) -> str | None:
+def _detect_ext_from_error(error_msg: str) -> Optional[str]:
     """Parser hata mesajından gerçek dosya türünü çıkarır."""
     error_lower = error_msg.lower()
     if "spreadsheetml" in error_lower or "excel" in error_lower:

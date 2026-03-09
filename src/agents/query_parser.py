@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from typing import Optional
 import logging
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
@@ -122,7 +123,7 @@ def _quick_extract(query: str) -> dict:
     return filters
 
 
-def _parse_json(text: str) -> dict | None:
+def _parse_json(text: str) -> Optional[dict]:
     """LLM yanıtından JSON parse eder."""
     cleaned = text.strip()
     if cleaned.startswith("```"):

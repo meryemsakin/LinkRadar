@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import re
 import logging
+from typing import Optional, Tuple, List
 from urllib.parse import urljoin, urlparse, unquote
 from src.graph.state import AgentState
 
@@ -86,7 +87,7 @@ def classify_file_type(ext: str) -> str:
     return FILE_TYPE_MAP.get(ext.lower(), "other")
 
 
-def detect_period(text: str, url: str) -> str | None:
+def detect_period(text: str, url: str) -> Optional[str]:
     """Link text ve URL'den dönem bilgisi çıkarır."""
     combined = f"{text} {url}".lower()
 
@@ -115,9 +116,9 @@ def detect_period(text: str, url: str) -> str | None:
 
 
 def apply_filters(
-    files: list[dict],
+    files: List[dict],
     user_filters: dict,
-    page_meta: dict | None = None,
+    page_meta: Optional[dict] = None,
 ) -> list[dict]:
     """
     Kullanıcı filtrelerini uygular.
@@ -230,7 +231,7 @@ def detect_download_link(href: str) -> bool:
     return False
 
 
-def infer_file_type_from_context(link: dict) -> tuple[str, str]:
+def infer_file_type_from_context(link: dict) -> Tuple[str, str]:
     """
     Link text, title veya image src'den dosya türünü çıkarır.
     Returns: (extension, file_type) tuple
