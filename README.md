@@ -4,6 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://python.org)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Agentic-green)](https://langchain-ai.github.io/langgraph/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED)](https://www.docker.com/)
 
 ## Demo
 
@@ -21,6 +22,71 @@
 - 🛡️ **Smart Fallback Chain** — Yanlış etiketli dosyaları otomatik algılar ve doğru parser'a yönlendirir
 - ✅ **Verifier Feedback Loop** — Sonuçları doğrular, gerekirse yeniden analiz tetikler
 - 📊 **Adaptive Parsing** — PDF'in başını, ortasını, sonunu akıllıca örnekler
+
+---
+
+## Hızlı Başlangıç (Docker — Önerilen)
+
+Tek gereksinim: [Docker](https://docs.docker.com/get-docker/) yüklü olmalı.
+
+```bash
+# 1. Klonla
+git clone https://github.com/meryemsakin/LinkRadar.git
+cd LinkRadar
+
+# 2. API key'ini ayarla
+cp .env.example .env
+# .env dosyasını açıp OPENAI_API_KEY değerini girin
+
+# 3. Build
+docker compose build
+
+# 4. Çalıştır — doğal dil sorgusu ile
+docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+  -q "2025 yılına ait petrol raporlarını listele"
+```
+
+### Daha Fazla Örnek
+
+```bash
+# Explicit filtreler ile
+docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+  --year 2025 --file-type xlsx
+
+# Sonuçları JSON'a kaydet
+docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+  -q "2025 raporları" -o examples/output.json
+```
+
+### Web Arayüzü (Gradio UI)
+
+```bash
+docker compose up ui
+# Tarayıcıda http://localhost:7860 adresine gidin
+```
+
+---
+
+## Örnek Çıktı
+
+```
+📊 Kaynak: EPDK - Enerji Piyasası Düzenleme Kurumu — Aylık Raporlar
+🏛️  Sektör: Enerji
+🔍 Filtre: Yıl → 2025
+
+📁 2025 / Ocak
+  ├── 📄 2025_Petrol_Piyasası_Ocak_Sektör_Raporu.docx  [631.8 KB]
+  │     └── Rafineri üretimi, ithalat ve ihracat verilerini
+  │         detaylandıran tablolar içermektedir.
+  └── 📄 İl_Bazında_Teslimler_Ocak_2025.xlsx  [267.4 KB]
+        └── 81 ilde petrol ürünü teslim verileri...
+
+📁 2025 / Şubat ... Aralık
+
+✅ 16/16 dosya başarıyla analiz edildi (16.3s, paralel)
+```
+
+---
 
 ## Mimari
 
@@ -56,65 +122,11 @@
                                    └─────────────────┘
 ```
 
-## Hızlı Başlangıç
-
-```bash
-# Kurulum
-pip install -r requirements.txt
-crawl4ai-setup
-
-# .env ayarla
-cp .env.example .env
-# OPENAI_API_KEY=your_key_here
-
-# Doğal dil ile çalıştır
-python main.py "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
-  -q "2025 yılına ait petrol sektör raporlarını listele" \
-  -o examples/output.json
-
-# Explicit filtreler ile
-python main.py "https://www.epdk.gov.tr/..." --year 2025 --month Ocak
-```
-
-> **Not:** Başarılı analiz sonuçları ve yapılandırılmış veriler otomatik olarak `examples/` klasörüne JSON formatında kaydedilir.
-
-## 🖥️ Web Arayüzü (Gradio UI)
-
-Terminal (CLI) yerine modern bir web arayüzü üzerinden işlem yapmak isterseniz:
-
-```bash
-# Gerekli kütüphanenin yüklü olduğundan emin olun
-pip install gradio
-
-# Arayüzü başlatın
-python app.py
-```
-
-Tarayıcınızda açılacak ekrandan hedef URL'yi ve dilerseniz doğal dil sorgunuzu doğrudan girebilir, sonuçları görsel olarak inceleyebilirsiniz.
-
-## Örnek Çıktı
-
-```
-📊 Kaynak: EPDK - Enerji Piyasası Düzenleme Kurumu — Aylık Raporlar
-🏛️  Sektör: Enerji
-🔍 Filtre: Yıl → 2025
-
-📁 2025 / Ocak
-  ├── 📄 2025_Petrol_Piyasası_Ocak_Sektör_Raporu.docx  [631.8 KB]
-  │     └── Rafineri üretimi, ithalat ve ihracat verilerini
-  │         detaylandıran tablolar içermektedir.
-  └── 📄 İl_Bazında_Teslimler_Ocak_2025.xlsx  [267.4 KB]
-        └── 81 ilde petrol ürünü teslim verileri...
-
-📁 2025 / Şubat ... Aralık
-
-✅ 16/16 dosya başarıyla analiz edildi (16.3s, paralel)
-```
-
 ## Proje Yapısı
 
 ```
 ├── main.py                          # CLI giriş noktası (--query, --output)
+├── app.py                           # Gradio web arayüzü
 ├── src/
 │   ├── agents/
 │   │   ├── query_parser.py          # Doğal dil → filtre (LLM + regex)
@@ -135,9 +147,9 @@ Tarayıcınızda açılacak ekrandan hedef URL'yi ve dilerseniz doğal dil sorgu
 │   └── formatters/                  # Terminal output formatter
 ├── examples/                        # Örnek JSON çıktılar
 ├── tests/                           # Unit testler (31 test)
-├── requirements.txt
 ├── Dockerfile
-└── docker-compose.yml
+├── docker-compose.yml
+└── requirements.txt
 ```
 
 ## Tasarım Kararları
@@ -180,35 +192,26 @@ Bu yapı oldukça esnektir ve farklı kurum sitelerindeki testlerden başarıyla
 - **TCMB (Türkiye Cumhuriyet Merkez Bankası):** Parçalanmış ve derin arşiv dizinlerinde yer alan kompleks enflasyon / istatistik verilerinin ayrıştırılması.
 - **KAP (Kamuyu Aydınlatma Platformu):** Şirket bildirimlerinde (PDF/Word ağırlıklı) sayfa başlıkları ve konuların hızlıca özetlenmesi senaryoları.
 
-## Docker
+---
 
-### CLI — Tek Komutla Sorgu
-
-```bash
-# Doğal dil sorgusu ile
-docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
-  -q "2025 yılına ait petrol raporlarını listele"
-
-# Explicit filtreler ile
-docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
-  --year 2025 --file-type xlsx
-
-# Sonuçları JSON'a kaydet
-docker compose run linkradar analyze "https://www.epdk.gov.tr/..." \
-  -q "2025 raporları" -o examples/output.json
-```
-
-### Web Arayüzü (Gradio UI)
+## Yerel Kurulum (Docker Olmadan)
 
 ```bash
-docker compose up ui
-# Tarayıcıda http://localhost:7860 adresine gidin
-```
+# Kurulum
+pip install -r requirements.txt
+crawl4ai-setup
 
-### Build
+# .env ayarla
+cp .env.example .env
+# OPENAI_API_KEY değerini girin
 
-```bash
-docker compose build
+# CLI
+python main.py analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+  -q "2025 yılına ait petrol sektör raporlarını listele"
+
+# Gradio UI
+python app.py
+# → http://localhost:7860
 ```
 
 ## Test
