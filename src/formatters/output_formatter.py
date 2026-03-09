@@ -9,13 +9,14 @@ from rich.tree import Tree
 from rich.panel import Panel
 from rich.text import Text
 from rich.table import Table
+from typing import Optional
 from collections import defaultdict
 
 
 console = Console()
 
 
-def format_size(size_bytes: int | None) -> str:
+def format_size(size_bytes: Optional[int]) -> str:
     """Byte cinsinden boyutu okunaklı formata çevirir."""
     if not size_bytes:
         return ""
