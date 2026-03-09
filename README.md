@@ -42,7 +42,7 @@ cp .env.example .env
 docker compose build
 
 # 4. Çalıştır — doğal dil sorgusu ile
-docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+docker compose run linkradar "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
   -q "2025 yılına ait petrol raporlarını listele"
 ```
 
@@ -50,11 +50,11 @@ docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-1
 
 ```bash
 # Explicit filtreler ile
-docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+docker compose run linkradar "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
   --year 2025 --file-type xlsx
 
 # Sonuçları JSON'a kaydet
-docker compose run linkradar analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+docker compose run linkradar "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
   -q "2025 raporları" -o examples/output.json
 ```
 
@@ -206,7 +206,7 @@ cp .env.example .env
 # OPENAI_API_KEY değerini girin
 
 # CLI
-python main.py analyze "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
+python main.py "https://www.epdk.gov.tr/Detay/Icerik/3-0-104/aylik-sektor-raporu" \
   -q "2025 yılına ait petrol sektör raporlarını listele"
 
 # Gradio UI
