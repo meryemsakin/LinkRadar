@@ -8,7 +8,7 @@
 ## Demo
 
 ### 🖥️ Web Arayüzü (UI)  
-![LinkRadar Web UI Demo — Agentic Workflow in Action](assets/demo_ui.gif?v=2)
+![LinkRadar Web UI Demo — Agentic Workflow in Action](assets/linkradar_ui_demo.gif)
 
 ### 💻 Terminal (CLI)
 ![LinkRadar Terminal Demo — Hızlı CLI Entegrasyonu](assets/demo.gif)
